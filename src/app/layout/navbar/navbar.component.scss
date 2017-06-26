@@ -1,0 +1,30 @@
+#navbar {
+    &-top {
+        color: #fff;
+        font-size: x-large;
+        height: 50px;
+        left: 0;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 3000;
+    }
+
+    &-sidepanel {
+        background: #2D7D9A;
+        height: 100vh;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 65%;
+        z-index: 3500;
+        -webkit-box-shadow: 4px 0px 4px 0px #444;
+        -moz-box-shadow: 4px 0px 4px 0px #444;
+        box-shadow: 4px 0px 4px 0px #444;
+    }
+
+    &-subtitle {
+        font-family: "Segoe UI Light","HelveticaNeue-Light",sans-serif;
+    }
+}

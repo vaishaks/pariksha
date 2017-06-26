@@ -1,0 +1,12 @@
+<div id="navbar" (clickOutside)="outsideClicked()">
+  <div id="navbar-top">
+    <span id="hamburger" (click)="hamburgerClicked()">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </span>
+    <span id="navbar-title">Pariksha</span>
+    <span id="navbar-subtitle">test your skills</span>
+  </div>
+  <div id="navbar-sidepanel" *ngIf="isSidePanelOpen">
+
+  </div>
+</div>
