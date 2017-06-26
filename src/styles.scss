@@ -1,9 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'common';
 
-body {
+body {        
     @include gradient-background();
-    background: $primary-color;  /* fallback for old browsers */
     color: $foreground-color;
     font-family: $font-family;
 }
