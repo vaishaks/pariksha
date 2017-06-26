@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'common';
+
 body {
-    background: #0099BC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #00B7C3, #0099BC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #00B7C3, #0099BC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #fff;
-    font-family: "Segoe UI","HelveticaNeue-Light",sans-serif;
+    @include gradient-background();
+    background: $primary-color;  /* fallback for old browsers */
+    color: $foreground-color;
+    font-family: $font-family;
 }

@@ -1,6 +1,8 @@
+@import '../../../common';
+
 #navbar {
     &-top {
-        color: #fff;
+        color: $foreground-color;
         font-size: x-large;
         height: 50px;
         left: 0;
@@ -12,19 +14,17 @@
     }
 
     &-sidepanel {
-        background: #2D7D9A;
+        @include box-shadow();
+        background: $tertiary-color;
         height: 100vh;
         left: 0;
         position: absolute;
         top: 0;
         width: 65%;
         z-index: 3500;
-        -webkit-box-shadow: 4px 0px 4px 0px #444;
-        -moz-box-shadow: 4px 0px 4px 0px #444;
-        box-shadow: 4px 0px 4px 0px #444;
     }
 
     &-subtitle {
-        font-family: "Segoe UI Light","HelveticaNeue-Light",sans-serif;
+        font-family: $font-family-light;
     }
 }
