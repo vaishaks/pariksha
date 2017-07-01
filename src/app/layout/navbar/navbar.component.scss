@@ -1,16 +1,9 @@
 @import '../../../common';
 
 #navbar {
-    &-top {
-        color: $foreground-color;
-        font-size: x-large;
-        height: 50px;
-        left: 0;
-        padding: 10px;
+    &-hamburger {
+        left: 10px;
         position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 3000;
     }
 
     &-sidepanel {
@@ -24,7 +17,22 @@
         z-index: 3500;
     }
 
-    &-subtitle {
-        font-family: $font-family-light;
+    &-title {
+        position: fixed;
+        text-align: center;
+        width: 100%;
+    }
+
+    &-top {
+        color: $foreground-color;
+        font-family: 'Yatra One', cursive;
+        font-size: xx-large;
+        height: 50px;
+        left: 0;
+        padding: 10px 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 3000;
     }
 }
