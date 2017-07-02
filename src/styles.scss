@@ -6,3 +6,19 @@ body {
     color: $foreground-color;
     font-family: $font-family;
 }
+
+#under-contruction {
+    margin: 50% auto;
+    width: 100%;
+
+    &-image {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    &-title {
+        font-size: large;
+        padding: 15px;
+        text-align: center;
+    }
+}
