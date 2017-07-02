@@ -2,13 +2,24 @@
   <div id="navbar-top">
     <span id="navbar-title">pariksha</span>
     <span id="navbar-hamburger" (click)="hamburgerClicked()">
-      <i class="icons icons-hamburger" aria-hidden="true"></i>
+      <i class="icons navbar-icons navbar-icons-hamburger" aria-hidden="true"></i>
     </span>
   </div>
   <div id="navbar-sidepanel" *ngIf="isSidePanelOpen">
 
   </div>
   <div id="navbar-bottom">
-
+    <div class="navbar-bottom-button" id="navbar-bottom-home">
+      <i class="icons navbar-icons navbar-icons-bottom navbar-icons-home" aria-hidden="true"></i>
+    </div>
+    <div class="navbar-bottom-button" id="navbar-bottom-search">
+      <i class="icons navbar-icons navbar-icons-bottom navbar-icons-magnifying-glass" aria-hidden="true"></i>
+    </div>
+    <div class="navbar-bottom-button" id="navbar-bottom-create">
+      <i class="icons navbar-icons navbar-icons-bottom navbar-icons-admission-form" aria-hidden="true"></i>
+    </div>
+    <div class="navbar-bottom-button" id="navbar-bottom-profile">
+      <i class="icons navbar-icons navbar-icons-bottom navbar-icons-avatar" aria-hidden="true"></i>
+    </div>
   </div>
 </div>

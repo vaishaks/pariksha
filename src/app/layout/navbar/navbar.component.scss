@@ -5,6 +5,7 @@
         @include box-shadow(-1px, -8px, 12px, -6px, #828282);
         background-color: $off-foreground-color;
         bottom: 0;
+        display: flex;
         height: 55px;
         left: 0;
         position: fixed;
@@ -48,11 +49,38 @@
     }
 }
 
-//Icons
-.icons {
-    &-hamburger {
-        background-image: url("../../../assets/menu.png");
+.navbar {
+    &-bottom-button {
+        padding: 5px;
+        width: 25%;
+    }    
+
+    &-icons {
         height: 32px;
         width: 32px;
-    }
+
+        &-bottom {
+            margin: 0 auto;
+        }
+
+        &-admission-form {
+            background-image: url("../../../assets/admission-form.png");     
+        }
+
+        &-avatar {
+            background-image: url("../../../assets/avatar.png");
+        }
+
+        &-hamburger {
+            background-image: url("../../../assets/menu.png");
+        }  
+
+        &-home {
+            background-image: url("../../../assets/home.png");
+        }
+
+        &-magnifying-glass {
+            background-image: url("../../../assets/magnifying-glass.png");
+        }                      
+    }        
 }
