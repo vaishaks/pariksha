@@ -3,17 +3,23 @@ $primary-color: #0099BC;
 $secondary-color: #00B7C3;
 $tertiary-color: #2D7D9A;
 $foreground-color: #fff;
+$off-foreground-color: #ededed;
 //Font
 $font-family: "Segoe UI","HelveticaNeue-Light",sans-serif;
 $font-family-light: "Segoe UI Light","HelveticaNeue-Light",sans-serif;
 //mixins
-@mixin box-shadow() {
-    -webkit-box-shadow: 4px 0px 4px 0px #444;
-    -moz-box-shadow: 4px 0px 4px 0px #444;
-    box-shadow: 4px 0px 4px 0px #444;
+@mixin box-shadow($hor, $ver, $blur, $spr, $color) {
+    -webkit-box-shadow: $hor $ver $blur $spr $color;
+    -moz-box-shadow: $hor $ver $blur $spr $color;
+    box-shadow: $hor $ver $blur $spr $color;
 }
 @mixin gradient-background() {
     background: $primary-color;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, $secondary-color, $primary-color);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, $secondary-color, $primary-color); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+//Icons
+.icons {
+    background-repeat: no-repeat;
+    display: block;
 }

@@ -1,13 +1,24 @@
 @import '../../../common';
 
 #navbar {
-    &-hamburger {
-        left: 10px;
+    &-bottom {
+        @include box-shadow(-1px, -8px, 12px, -6px, #828282);
+        background-color: $off-foreground-color;
+        bottom: 0;
+        height: 55px;
+        left: 0;
         position: fixed;
+        width: 100%;
+    }
+
+    &-hamburger {
+        margin-left: 10px;
+        margin-top: 8px;
+        position: absolute;
     }
 
     &-sidepanel {
-        @include box-shadow();
+        @include box-shadow(4px, 0px, 4px, 0px, #444);
         background: $tertiary-color;
         height: 100vh;
         left: 0;
@@ -18,7 +29,7 @@
     }
 
     &-title {
-        position: fixed;
+        position: absolute;
         text-align: center;
         width: 100%;
     }
@@ -29,10 +40,19 @@
         font-size: xx-large;
         height: 50px;
         left: 0;
-        padding: 10px 0;
+        padding: 5px 0 10px 0;
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 3000;
+    }
+}
+
+//Icons
+.icons {
+    &-hamburger {
+        background-image: url("../../../assets/menu.png");
+        height: 32px;
+        width: 32px;
     }
 }
