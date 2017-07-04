@@ -8,8 +8,11 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
+        "Web.config",
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "manifest.json",
+        "pariksha-icon.png"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,7 +22,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "../node_modules/typeface-yatra-one/index.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

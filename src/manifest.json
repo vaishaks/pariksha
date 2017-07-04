@@ -1,0 +1,15 @@
+{
+  "lang": "en",
+  "background_color": "#009bbc",
+  "name": "Pariksha",
+  "short_name": "Pariksha",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "pariksha-icon.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "portrait"
+}
