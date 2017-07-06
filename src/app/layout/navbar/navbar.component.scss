@@ -52,19 +52,47 @@
 .navbar {
     &-bottom-button {
         padding: 5px;
-        width: 25%;
-    }    
+        width: 25%;     
+
+        &.active{
+           .navbar-icons-admission-form {
+               background-image: url("../../../assets/admission-form-active.png");
+           }
+
+           .navbar-icons-avatar {
+               background-image: url("../../../assets/avatar-active.png");
+           }
+
+           .navbar-icons-home {
+               background-image: url("../../../assets/home-active.png");
+           }
+
+           .navbar-icons-magnifying-glass {
+               background-image: url("../../../assets/magnifying-glass-active.png");
+           }
+
+           .navbar-bottom-button-title {
+               color: $primary-color;
+           }
+        }
+
+        &-title {
+            color: $inactive-color;
+            font-size: 10px;
+            text-align: center;
+        }   
+    }   
 
     &-icons {
         height: 32px;
         width: 32px;
 
         &-bottom {
-            margin: 0 auto;
+            margin-left: calc(50% - 13px);
         }
 
         &-admission-form {
-            background-image: url("../../../assets/admission-form.png");     
+            background-image: url("../../../assets/admission-form.png");    
         }
 
         &-avatar {

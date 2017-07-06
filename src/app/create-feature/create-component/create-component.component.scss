@@ -1,0 +1,37 @@
+@import '../../../common';
+
+#create-view {
+  padding-top: 12px;
+}
+
+.create {
+  &-card {
+    background-color: $foreground-color;
+    border-radius: 10px;
+    display: flex;
+    height: 150px;
+    margin: 12px auto;
+    width: 95%;
+
+    &-content {
+      width: 100%;
+
+      &-title {
+        color: $primary-color;
+        font-size: 28px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-left: 15px;
+      }
+
+      &-subtitle {
+        color: $inactive-color;
+        margin: 5px 15px 0 15px;
+      }
+    }
+
+    &-icon {
+        margin: auto 0 auto 15px;
+    }
+  }
+}

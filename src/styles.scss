@@ -6,3 +6,9 @@ body {
     color: $foreground-color;
     font-family: $font-family;
 }
+
+#app-view {
+    height: calc(100vh - 110px);
+    margin-top: 55px;
+    overflow-y: auto;
+}

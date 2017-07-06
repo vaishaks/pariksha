@@ -4,6 +4,7 @@ $secondary-color: #00B7C3;
 $tertiary-color: #2D7D9A;
 $foreground-color: #fff;
 $off-foreground-color: #ededed;
+$inactive-color: #ababab;
 //Font
 $font-family: "Segoe UI","HelveticaNeue-Light",sans-serif;
 $font-family-light: "Segoe UI Light","HelveticaNeue-Light",sans-serif;
@@ -23,3 +24,5 @@ $font-family-light: "Segoe UI Light","HelveticaNeue-Light",sans-serif;
     background-repeat: no-repeat;
     display: block;
 }
+//Reset
+a { color: inherit; }
