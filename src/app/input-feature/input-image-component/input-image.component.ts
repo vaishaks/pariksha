@@ -11,13 +11,17 @@ export class InputImageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    navigator.mediaDevices.getUserMedia({video: true})
-    .then(mediaStream => {
-      console.log(mediaStream);
-      document.querySelector('video').srcObject = mediaStream;
+      // Grab elements, create settings, etc.
+      var video = document.getElementById('video');
 
-      const track = mediaStream.getVideoTracks()[0];      
-      var imageCapture = new ImageCapture(track);      
+      // Get access to the camera!
+      if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+          // Not adding `{ audio: true }` since we only want video now
+          navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+              video.src = window.URL.createObjectURL(stream);
+              video.play();
+          });
+      }
     })
     .catch(error => console.log(error));
   }
