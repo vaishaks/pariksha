@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { NavbarService } from './layout/navbar/navbar.service';
+
 import { AppComponent } from './app.component';
 import { CreateComponentComponent } from './create-feature/create-component/create-component.component';
 import { ClickOutsideDirective } from './layout/clickOutsideDirective/click-outside.directive';
@@ -8,6 +10,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { UnderConstructionComponent } from './layout/under-construction/under-construction.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { CreateTestComponent } from './create-feature/create-test/create-test.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
     ClickOutsideDirective,
     NavbarComponent,
     UnderConstructionComponent,
-    CreateComponentComponent
+    CreateComponentComponent,
+    CreateTestComponent
   ],
   imports: [
     BrowserModule,

@@ -12,7 +12,7 @@
         width: 100%;
     }
 
-    &-hamburger {
+    &-icon {
         margin-left: 10px;
         margin-top: 8px;
         position: absolute;
@@ -97,6 +97,10 @@
 
         &-avatar {
             background-image: url("../../../assets/avatar.png");
+        }
+
+        &-back {
+            background-image: url("../../../assets/left-arrow.png");
         }
 
         &-hamburger {
