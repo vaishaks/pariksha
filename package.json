@@ -5,6 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "securestart": "ng serve --ssl 1 --ssl-key \"bunnycat43\" --ssl-cert \"parikshaweb-dev.pfx\"",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
