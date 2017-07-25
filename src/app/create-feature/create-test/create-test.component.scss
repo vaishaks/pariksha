@@ -1,0 +1,16 @@
+#create-test {
+    &-title {
+        width: 100%;
+        height: 50px;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        padding: 5px 10px;
+        background-color: rgba(0,0,0,0.1);
+        color: #fff;
+    }
+
+    &-title::-webkit-input-placeholder {
+        color: #eee;
+    }
+}

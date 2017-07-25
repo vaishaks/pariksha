@@ -11,6 +11,8 @@ import { UnderConstructionComponent } from './layout/under-construction/under-co
 
 import { AppRoutingModule } from './app-routing.module';
 import { CreateTestComponent } from './create-feature/create-test/create-test.component';
+import { CreateSearchComponent } from './create-feature/create-search/create-search.component';
+import { SearchComponent } from './layout/search/search.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { CreateTestComponent } from './create-feature/create-test/create-test.co
     NavbarComponent,
     UnderConstructionComponent,
     CreateComponentComponent,
-    CreateTestComponent
+    CreateTestComponent,
+    CreateSearchComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

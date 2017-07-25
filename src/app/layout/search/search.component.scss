@@ -1,0 +1,36 @@
+@import '../../../common';
+
+#search {
+    &-bottom-line {
+        background-color: $primary-color;
+    }
+
+    &-box {
+        border: none;
+        height: 30px;
+        width: 100%;
+
+        &-container {
+            position: relative;
+        }
+
+        &-icon {
+            background-image: url("../../../assets/magnifying-glass-small.png");
+            display: block;
+            height: 16px;
+            width: 16px;
+            position: absolute;
+            top: 30%;
+        }
+    }
+
+    &-box:focus {
+        outline: none;
+    }
+
+    &-container {
+        background-color: #fff;
+        height: 30%;
+        padding: 15px;
+    }
+}
