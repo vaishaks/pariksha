@@ -16,7 +16,7 @@ export class InputImageComponent implements OnInit {
     this.clicked = false;
 
     this.photo = document.getElementById('photo');
-   }  
+   }
 
   ngOnInit() {
       // Grab elements, create settings, etc.
@@ -24,7 +24,7 @@ export class InputImageComponent implements OnInit {
 
       // Get access to the camera!
       if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-          navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } }).then(function(stream) {
+          navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } }).then(function(stream) {
               video1.src = window.URL.createObjectURL(stream);
               video1.play();
           });

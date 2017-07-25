@@ -1,0 +1,73 @@
+<div class="search-container-collapse" id="search-container" [ngClass]="searchContainerResizeClass">
+  <div id="search-box-container">
+    <input id="search-box" type="text" placeholder="Search for keywords in questions or quizzes" (keyup)="onKeyUp($event)" [(ngModel)]="searchText">
+    <i class="icons" id="search-box-icon"></i>
+  </div>    
+  <hr id="search-bottom-line" />
+  <div id="search-filters" *ngIf="isSearchContainerExpand">
+    <div class="search-filter-container">
+      <div class="search-filter-title">
+        SUBJECTS
+      </div>
+      <div class="search-filter-options">
+        <div class="search-filter-option">
+          MAT
+        </div>
+        <div class="search-filter-option">
+          BIO
+        </div>
+        <div class="search-filter-option">
+          ENG
+        </div>
+        <div class="search-filter-option">
+          CHEM
+        </div> 
+        <div class="search-filter-option">
+          PHY
+        </div>        
+      </div>
+    </div>
+    <div class="search-filter-container">
+      <div class="search-filter-title">
+        GRADE
+      </div>
+      <div class="search-filter-options">
+        <div class="search-filter-option grade">
+          1
+        </div>
+        <div class="search-filter-option grade">
+          2
+        </div>
+        <div class="search-filter-option grade">
+          3
+        </div>
+        <div class="search-filter-option grade">
+          4
+        </div> 
+        <div class="search-filter-option grade">
+          5
+        </div>
+        <div class="search-filter-option grade">
+          6
+        </div>
+        <div class="search-filter-option grade">
+          7
+        </div>   
+        <div class="search-filter-option grade">
+          8
+        </div>
+        <div class="search-filter-option grade">
+          9
+        </div>                                                 
+      </div>
+    </div>
+    <button id="search-filters-more">
+      <i class="icons" id="search-filters-more-icon"></i>
+      More Filters
+    </button>    
+  </div>
+  <div id="search-container-resize" (click)="searchContainerResizeClicked()">
+    <i class="icons search-container-resize-icon" id="search-container-resize-collapse" *ngIf="!isSearchContainerExpand"></i>
+    <i class="icons search-container-resize-icon" id="search-container-resize-expand" *ngIf="isSearchContainerExpand"></i>
+  </div>
+</div>

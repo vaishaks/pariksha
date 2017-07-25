@@ -12,7 +12,7 @@
         width: 100%;
     }
 
-    &-hamburger {
+    &-icon {
         margin-left: 10px;
         margin-top: 8px;
         position: absolute;
@@ -36,8 +36,7 @@
     }
 
     &-top {
-        color: $foreground-color;
-        font-family: 'Yatra One', cursive;
+        color: $foreground-color;        
         font-size: xx-large;
         height: 50px;
         left: 0;
@@ -50,6 +49,10 @@
 }
 
 .navbar {
+    &-app-title {
+        font-family: 'Yatra One', cursive;
+    }
+
     &-bottom-button {
         padding: 5px;
         width: 25%;     
@@ -97,6 +100,10 @@
 
         &-avatar {
             background-image: url("../../../assets/avatar.png");
+        }
+
+        &-back {
+            background-image: url("../../../assets/left-arrow.png");
         }
 
         &-hamburger {

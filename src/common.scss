@@ -5,6 +5,7 @@ $tertiary-color: #2D7D9A;
 $foreground-color: #fff;
 $off-foreground-color: #ededed;
 $inactive-color: #ababab;
+$inactive-color-light: #d6d6d6;
 //Font
 $font-family: "Segoe UI","HelveticaNeue-Light",sans-serif;
 $font-family-light: "Segoe UI Light","HelveticaNeue-Light",sans-serif;
@@ -26,7 +27,12 @@ $font-family-light: "Segoe UI Light","HelveticaNeue-Light",sans-serif;
 }
 //Reset
 a { color: inherit; }
-
-.page-title {
-    margin-left: 2.5%;
+input, button, submit { 
+    border:none;
+    box-sizing: border-box;
+    background: none;
+    color: $foreground-color;
+}
+div {
+    box-sizing: border-box;
 }

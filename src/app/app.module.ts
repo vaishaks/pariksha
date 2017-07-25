@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
+import { NavbarService } from './layout/navbar/navbar.service';
 
 import { AppComponent } from './app.component';
 import { CreateComponentComponent } from './create-feature/create-component/create-component.component';
@@ -11,6 +15,10 @@ import { UnderConstructionComponent } from './layout/under-construction/under-co
 import { AppRoutingModule } from './app-routing.module';
 import { InputImageComponent } from './input-feature/input-image-component/input-image.component';
 import { InputTextComponent } from './input-feature/input-text/input-text.component';
+import { CreateTestComponent } from './create-feature/create-test/create-test.component';
+import { CreateSearchComponent } from './create-feature/create-search/create-search.component';
+import { SearchComponent } from './layout/search/search.component';
+import { LonelyComponent } from './layout/lonely/lonely.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +29,16 @@ import { InputTextComponent } from './input-feature/input-text/input-text.compon
     CreateComponentComponent,
     AddQuestionComponent,
     InputImageComponent,
-    InputTextComponent
+    InputTextComponent,
+    CreateTestComponent,
+    CreateSearchComponent,
+    SearchComponent,
+    LonelyComponent
   ],
   imports: [
     BrowserModule,
+    HttpModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
