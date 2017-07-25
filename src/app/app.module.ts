@@ -10,6 +10,7 @@ import { UnderConstructionComponent } from './layout/under-construction/under-co
 
 import { AppRoutingModule } from './app-routing.module';
 import { InputImageComponent } from './input-feature/input-image-component/input-image.component';
+import { InputTextComponent } from './input-feature/input-text/input-text.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { InputImageComponent } from './input-feature/input-image-component/input
     UnderConstructionComponent,
     CreateComponentComponent,
     AddQuestionComponent,
-    InputImageComponent
+    InputImageComponent,
+    InputTextComponent
   ],
   imports: [
     BrowserModule,

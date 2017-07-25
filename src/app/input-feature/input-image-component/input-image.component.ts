@@ -6,9 +6,17 @@ import { ImageCapture } from 'image-capture';
   templateUrl: './input-image.component.html',
   styleUrls: ['./input-image.component.scss']
 })
+
 export class InputImageComponent implements OnInit {
 
-  constructor() { }
+  clicked: boolean;
+  photo: any;
+
+  constructor() {
+    this.clicked = false;
+
+    this.photo = document.getElementById('photo');
+   }  
 
   ngOnInit() {
       // Grab elements, create settings, etc.
@@ -16,8 +24,7 @@ export class InputImageComponent implements OnInit {
 
       // Get access to the camera!
       if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-          // Not adding `{ audio: true }` since we only want video now
-          navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+          navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } }).then(function(stream) {
               video1.src = window.URL.createObjectURL(stream);
               video1.play();
           });
@@ -25,10 +32,22 @@ export class InputImageComponent implements OnInit {
   }
 
   capture() {
+    this.clicked = true;
+
     const canvas: any = document.getElementById('canvas');
     const context = canvas.getContext('2d');
     const video = document.getElementById('video');
-    context.drawImage(video, 0, 0, 640, 480);
+    context.drawImage(video, 0, 0, 300, 150);
+    var data = canvas.toDataURL('image/png');
+    document.getElementById('photo').setAttribute('src', data);
+  }
+
+  cancelCapture() {
+    this.clicked = false;
+  }
+
+  submitCapture() {
+    var imageSrc = document.getElementById('photo').getAttribute('src');
   }
 
 }
