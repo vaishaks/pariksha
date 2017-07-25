@@ -22,6 +22,13 @@
 
     &-title::-webkit-input-placeholder {
         color: $inactive-color-light;
-        font-size: 18px;
+        font-size: 13px;
+    }
+
+    &-add-icon {
+        background: url("../../../assets/add.png");
+        height: 32px;
+        width: 32px;
+        margin: auto;
     }
 }
