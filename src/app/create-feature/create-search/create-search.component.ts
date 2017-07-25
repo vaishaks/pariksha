@@ -4,22 +4,22 @@ import { LonelyService } from '../../layout/lonely/lonely.service';
 import { NavbarService } from '../../layout/navbar/navbar.service';
 
 @Component({
-  selector: 'app-create-test',
-  templateUrl: './create-test.component.html',
-  styleUrls: ['./create-test.component.scss']
+  selector: 'app-create-search',
+  templateUrl: './create-search.component.html',
+  styleUrls: ['./create-search.component.scss']
 })
-export class CreateTestComponent implements OnInit, OnDestroy {
-  testTitle = '';
+export class CreateSearchComponent implements OnInit, OnDestroy {
 
   constructor(private navbarService: NavbarService, private lonelyService: LonelyService) {}
 
   ngOnInit() {
     this.navbarService.enableBackButton(true);
-    this.navbarService.setPageTitle('Create Test');
-    this.lonelyService.setLonelyMessage('It\'s lonely here, why don\'t you go ahead and add some content');
+    this.navbarService.setPageTitle('Search');
+    this.lonelyService.setLonelyMessage('It\'s lonely here, search for questions or quizzes to make them show up here.');
   }
 
   ngOnDestroy() {
     this.navbarService.enableBackButton(false);
   }
+
 }

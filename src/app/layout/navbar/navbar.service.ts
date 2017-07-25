@@ -12,11 +12,11 @@ export class NavbarService {
 
   enableBackButton(isBackButtonEnabled: boolean) {
     this.isBackButtonEnabledSource.next(isBackButtonEnabled);
-  }
+  };
 
   setPageTitle(pageTitle: string) {
     this.pageTitleSource.next(pageTitle);
-  }
+  };
 
   constructor() { }
 }

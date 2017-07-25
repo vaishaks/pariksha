@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { NavbarService } from './layout/navbar/navbar.service';
 
@@ -11,6 +13,9 @@ import { UnderConstructionComponent } from './layout/under-construction/under-co
 
 import { AppRoutingModule } from './app-routing.module';
 import { CreateTestComponent } from './create-feature/create-test/create-test.component';
+import { CreateSearchComponent } from './create-feature/create-search/create-search.component';
+import { SearchComponent } from './layout/search/search.component';
+import { LonelyComponent } from './layout/lonely/lonely.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +24,15 @@ import { CreateTestComponent } from './create-feature/create-test/create-test.co
     NavbarComponent,
     UnderConstructionComponent,
     CreateComponentComponent,
-    CreateTestComponent
+    CreateTestComponent,
+    CreateSearchComponent,
+    SearchComponent,
+    LonelyComponent
   ],
   imports: [
     BrowserModule,
+    HttpModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
