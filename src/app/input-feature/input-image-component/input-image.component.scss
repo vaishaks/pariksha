@@ -1,0 +1,31 @@
+.imageCap {
+    margin: 5%;
+    width: 90%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.imageStill {
+    margin: 5%;
+    width: 90%;
+    height: 85%;
+}
+
+#cameraBtns {
+    margin: 5%;
+    margin-top: -5%;
+    width: 90%;
+    height: 10%;
+    display: inline-block;
+}
+
+.captureBtn {
+    text-align: center;
+    width: 50%;
+    height: 100%;    
+    margin: auto;
+    float: left;
+    background: rgba(0, 0, 0, 0);
+    color: black;
+    border: 0px;
+}
