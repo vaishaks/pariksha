@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { NavbarService } from './layout/navbar/navbar.service';
 
@@ -30,6 +31,7 @@ import { LonelyComponent } from './layout/lonely/lonely.component';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     FormsModule,
     AppRoutingModule
   ],
