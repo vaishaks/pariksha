@@ -7,7 +7,10 @@
 
     &-box {
         border: none;
+        color: $primary-color;
+        font-size: medium;
         height: 30px;
+        padding-left: 25px;
         width: 100%;
 
         &-container {
@@ -28,8 +31,92 @@
     }
 
     &-container {
-        background-color: #fff;
-        height: 30%;
+        background-color: $foreground-color;
         padding: 15px;
+        position: relative;
+
+        &-resize {
+            bottom: 0;
+            left: 0;            
+            position: absolute;
+            width: 100%;
+
+            &-collapse {
+                background: url("../../../assets/down-arrow.png");
+            }
+
+            &-expand {
+                background: url("../../../assets/up-arrow.png");
+            }
+        }
+    }
+
+    &-filters {
+        &-more {
+            align-items: center;            
+            color: $tertiary-color;
+            display: flex;
+            margin-top: 10px;
+            position: absolute;
+            right: 5px;
+
+            &-icon {
+                background: url("../../../assets/filter.png");
+                display: inline-block;
+                height: 16px;
+                margin-right: 5px;
+                width: 16px;
+            }
+        }
+    }
+}
+
+.search {
+    &-container {
+        &-collapse {
+            height: 80px;
+            transition: height 0.15s ease-out;
+        }
+
+        &-expand {
+            height: 250px;
+            transition: height 0.15s ease-out;
+        }
+
+        &-resize-icon {
+            height: 16px;
+            margin: 0 auto;
+            width: 16px;
+        }
+    }
+
+    &-filter {
+        &-container {
+            margin-bottom: 5px;
+        }
+
+        &-options {
+            margin-top: 5px;
+        }
+
+        &-option {
+            border: 1px solid;
+            color: $primary-color;
+            display: inline-block;
+            margin-right: 3px;
+            padding: 5px;
+            text-align: center;
+            width: 60px;
+
+            &.grade {
+                width: 30px;
+            }
+        }
+
+        &-title {
+            color: $tertiary-color;
+            font-size: small;
+            font-weight: bold;
+        }
     }
 }

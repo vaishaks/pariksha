@@ -1,8 +1,7 @@
 import { Component, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs/Subscription';
 
 import { NavbarService } from '../../layout/navbar/navbar.service';
-
-import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-navbar',

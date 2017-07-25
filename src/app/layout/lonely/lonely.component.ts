@@ -1,15 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs/Subscription';
+
+import { LonelyService } from '../../layout/lonely/lonely.service';
 
 @Component({
   selector: 'app-lonely',
   templateUrl: './lonely.component.html',
   styleUrls: ['./lonely.component.scss']
 })
-export class LonelyComponent implements OnInit {
+export class LonelyComponent implements OnDestroy {
+  lonelyMessage = '';
+  lonelyServiceSubscription: Subscription;
 
-  constructor() { }
+  constructor(private lonelyService: LonelyService) {
+    this.lonelyServiceSubscription = this.lonelyService.lonelyMessage$.subscribe(
+      message => {
+        this.lonelyMessage = message;
+      }
+    );
+  }
 
-  ngOnInit() {
+  ngOnDestroy() {
+    this.lonelyServiceSubscription.unsubscribe();
   }
 
 }

@@ -12,6 +12,13 @@ body {
     margin-top: 55px;
     overflow-y: auto;
 
+    #top-button {
+        font-size: larger;
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
+
     $fab-size: 64px;
     .floating-action-button {
         background: $primary-color;
