@@ -1,11 +1,13 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-
+import { InputService } from '../input-service/input.service';
 import { NavbarService } from '../../layout/navbar/navbar.service';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-input-image',
   templateUrl: './input-image.component.html',
-  styleUrls: ['./input-image.component.scss']
+  styleUrls: ['./input-image.component.scss'],
+  providers: [InputService]
 })
 
 export class InputImageComponent implements OnInit, OnDestroy {
@@ -13,7 +15,7 @@ export class InputImageComponent implements OnInit, OnDestroy {
   clicked: boolean;
   photo: any;
 
-  constructor(private navbarService: NavbarService) {
+  constructor(private navbarService: NavbarService, private InputService: InputService, private router: Router) {
     this.clicked = false;
 
     this.photo = document.getElementById('photo');
@@ -56,7 +58,15 @@ export class InputImageComponent implements OnInit, OnDestroy {
   };
 
   submitCapture() {
-    const imageSrc = document.getElementById('photo').getAttribute('src');
+    var imageSrc = document.getElementById('photo').getAttribute('src');
+    imageSrc = imageSrc.split('base64,')[1];
+
+    this.InputService.getTextFromImage(imageSrc).subscribe(
+      results => {
+        console.log(results);
+        this.router.navigate(['/create/edit', { enteredText: results["Result"] }]);        
+      }
+    );
   };
 
 }
