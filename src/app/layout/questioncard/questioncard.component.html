@@ -1,0 +1,39 @@
+<div class="question-card">
+  <img class="question-card-icon" src="../../../assets/{{question.tags.subject.toLowerCase()}}.png" />
+  <img class="question-card-icon" src="../../../assets/notebook.png" *ngIf="!(['math', 'biology', 'history', 'physics', 'english', 'geography', 'chemistry'].indexOf(question.tags.subject.toLowerCase()) >= 0)" />
+  <div class="question-card-content">
+    <div class="question-card-content-title">
+      {{question.questionText}}
+    </div>
+    <div class="question-card-content-metadata">
+      <div class="question-card-content-metadata-col">
+        <div>
+          <span class="question-card-content-metadata-tag">SUBJECT</span>
+          <span class="question-card-content-metadata-value">{{question.tags.subject}}</span>
+        </div>
+        <div>
+          <span class="question-card-content-metadata-tag">CHAPTER</span>
+          <span class="question-card-content-metadata-value">{{question.tags.chapter}}</span>
+        </div>
+        <div>
+          <span class="question-card-content-metadata-tag">TOPIC</span>
+          <span class="question-card-content-metadata-value">{{question.tags.topic}}</span>
+        </div>        
+      </div>
+      <div class="question-card-content-metadata-col">
+        <div>
+          <span class="question-card-content-metadata-tag">TIME REQUIRED</span>
+          <span class="question-card-content-metadata-value">{{question.tags.timeRequiredMinutes}}</span>
+        </div>
+        <div>
+          <span class="question-card-content-metadata-tag">QUESTION TYPE</span>
+          <span class="question-card-content-metadata-value">{{question.tags.answerType}}</span>
+        </div>
+        <div>
+          <span class="question-card-content-metadata-tag">BOARD</span>
+          <span class="question-card-content-metadata-value">{{question.tags.board}}</span>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>

@@ -71,3 +71,6 @@
     <i class="icons search-container-resize-icon" id="search-container-resize-expand" *ngIf="isSearchContainerExpand"></i>
   </div>
 </div>
+<div id="search-results-container" *ngIf="isSearchResultsLoaded">
+  <app-questioncard *ngFor="let question of searchResults" [question]="question"></app-questioncard>
+</div>

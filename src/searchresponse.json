@@ -1,0 +1,161 @@
+{
+  "IsSuccess": true,
+  "StatusCode": 200,
+  "ReasonPhrase": null,
+  "ErrorCode": 0,
+  "Result": [{
+    "id": "0b84b704-637b-460c-9139-3b71417b0e26",
+    "questionText": "Multiplication: 22*32?",
+    "tags": {
+      "board": "CBSE",
+      "subject": "Math",
+      "chapter": "2 Digit Multiplication",
+      "topic": "Multiplication",
+      "standard": "4",
+      "answerType": "Subjective",
+      "timeRequiredMinutes": "2",
+      "customTags": null
+    },
+    "questionAnswerType": 0,
+    "answer": {
+      "answerId": 0,
+      "answerText": "704"
+    },
+    "properties": null,
+    "createdBy": null,
+    "createdDateTime": null
+  },
+  {
+    "id": "0b84b704-637b-460c-9139-3b71417b0e27",
+    "questionText": "Which system of the body helps you breathe?",
+    "tags": {
+      "board": "CBSE",
+      "subject": "Biology",
+      "chapter": "Respiration, Digestion, and Excretion",
+      "topic": "Respiratory System",
+      "standard": "5",
+      "answerType": "Objective",
+      "timeRequiredMinutes": "1",
+      "customTags": null
+    },
+    "questionAnswerType": 0,
+    "answer": {
+      "answerId": 0,
+      "answerText": "Respiratory"
+    },
+    "properties": null,
+    "createdBy": null,
+    "createdDateTime": null
+  },
+  {
+    "id": "0b84b704-637b-460c-9139-3b71417b0e28",
+    "questionText": "After the fall of Rome, times were very difficult for citizens there. They were struggling to survive and protect themselves. What political and economic system helped to change this?",
+    "tags": {
+      "board": "CBSE",
+      "subject": "History",
+      "chapter": "Medieval Europe",
+      "topic": "Roman Empire",
+      "standard": "5",
+      "answerType": "Objective",
+      "timeRequiredMinutes": "1",
+      "customTags": null
+    },
+    "questionAnswerType": 0,
+    "answer": {
+      "answerId": 0,
+      "answerText": "Democracy"
+    },
+    "properties": null,
+    "createdBy": null,
+    "createdDateTime": null
+  },
+  {
+    "id": "0b84b704-637b-460c-9139-3b71417b0e29",
+    "questionText": "If an atom has a mass number of 14 and an atomic number of 9, then how many neutrons does the atom have in its nucleus?",
+    "tags": {
+      "board": "CBSE",
+      "subject": "Physics",
+      "chapter": "Quantum Physics",
+      "topic": "Atom",
+      "standard": "9",
+      "answerType": "Objective",
+      "timeRequiredMinutes": "2",
+      "customTags": null
+    },
+    "questionAnswerType": 0,
+    "answer": {
+      "answerId": 0,
+      "answerText": "5"
+    },
+    "properties": null,
+    "createdBy": null,
+    "createdDateTime": null
+  },
+  {
+    "id": "0b84b704-637b-460c-9139-3b71417b0e29",
+    "questionText": "Which macromolecules are usually hydrophobic and include fats, oils, and sterols?",
+    "tags": {
+      "board": "CBSE",
+      "subject": "Chemistry",
+      "chapter": "Macromolecules",
+      "topic": "Biomolecules",
+      "standard": "9",
+      "answerType": "Objective",
+      "timeRequiredMinutes": "2",
+      "customTags": null
+    },
+    "questionAnswerType": 0,
+    "answer": {
+      "answerId": 0,
+      "answerText": "lipids"
+    },
+    "properties": null,
+    "createdBy": null,
+    "createdDateTime": null
+  },   
+  {
+    "id": "0b84b704-637b-460c-9139-3b71417b0e29",
+    "questionText": "What is the correct plural form for tooth?",
+    "tags": {
+      "board": "CBSE",
+      "subject": "English",
+      "chapter": "Plurals",
+      "topic": "CCSS",
+      "standard": "2",
+      "answerType": "Objective",
+      "timeRequiredMinutes": "1",
+      "customTags": null
+    },
+    "questionAnswerType": 0,
+    "answer": {
+      "answerId": 0,
+      "answerText": "teeth"
+    },
+    "properties": null,
+    "createdBy": null,
+    "createdDateTime": null
+  }, 
+  {
+    "id": "0b84b704-637b-460c-9139-3b71417b0e29",
+    "questionText": "What is the capital of Hawaii?",
+    "tags": {
+      "board": "CBSE",
+      "subject": "Geography",
+      "chapter": "US Geography",
+      "topic": "Capitals",
+      "standard": "8",
+      "answerType": "Objective",
+      "timeRequiredMinutes": "1",
+      "customTags": null
+    },
+    "questionAnswerType": 0,
+    "answer": {
+      "answerId": 0,
+      "answerText": "Honolulu"
+    },
+    "properties": null,
+    "createdBy": null,
+    "createdDateTime": null
+  } 
+]
+}
