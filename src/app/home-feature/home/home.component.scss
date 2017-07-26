@@ -1,0 +1,51 @@
+@import '../../../common';
+
+#home {
+    &-background {
+        &-container {
+            background: url(../../../assets/background.jpg);
+            height: 150px;
+            position: fixed;
+            left: 0;
+            width: 100%;
+
+            &-title {
+                color: $foreground-color;
+                position: absolute;
+                font-size: 21px;
+                font-weight: bold;
+                bottom: 0;
+                left: 3px;
+                width: 75%;
+            }
+        }
+    }
+
+    &-activity {
+        &-container {
+            position: fixed;
+            top: 215px;
+            font-size: 10px;
+            font-weight: bold;            
+        }
+    }
+}
+
+.home {
+    &-label {
+        margin-bottom: 10px;
+    }
+    &-trending {
+        margin-top: 10px;
+    }
+    &-item {
+        background-color: $foreground-color;
+        padding: 5px;
+        border-radius: 5px;    
+        color: $primary-color;
+        text-align: center;  
+        width:  100px;       
+        display: inline-block;
+        margin-right: 1px;           
+    }
+}
