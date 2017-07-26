@@ -1,10 +1,12 @@
 <div id="app-view">
-<video id="video" [hidden]="clicked" class="imageCap" autoplay></video>
-<canvas id="canvas" [hidden]="true" class="imageCap"></canvas>
-<img id="photo" [hidden]="!clicked" class="imageStill">
-<div id="cameraBtns"> 
-    <button class="captureBtn" [hidden]="!clicked" (click)="cancelCapture()">Cancel</button>
-    <button class="captureBtn" id="clickBtn" [hidden]="clicked" (click)="capture()" style="margin-left: 25%;">Click</button>
-    <button class="captureBtn" [hidden]="!clicked" (click)="submitCapture()">Submit</button>
-</div>
+    <video id="video" [hidden]="clicked" class="imageCap" autoplay></video>
+    <canvas id="canvas" [hidden]="true" class="imageCap"></canvas>
+    <img id="photo" [hidden]="!clicked" class="imageStill">
+    <div id="cameraBtns"> 
+        <button class="captureBtn" [hidden]="!clicked" (click)="cancelCapture()">Cancel</button>
+        <button id="cameraBtns-click" class="captureBtn fab" *ngIf="!clicked" (click)="capture()">
+            <i class="icons" id="cameraBtns-shutter-icon"></i>
+        </button>
+        <button class="captureBtn" [hidden]="!clicked" (click)="submitCapture()">Submit</button>
+    </div>
 </div>  

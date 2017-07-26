@@ -25,9 +25,7 @@ body {
         @include user-select(none);
         display: flex;
         background-color: $tertiary-color;
-        position: fixed;
-        bottom: 75px;
-        right: 12px;
+        position: relative;
         outline: none;
         cursor: pointer;
         width: 60px;

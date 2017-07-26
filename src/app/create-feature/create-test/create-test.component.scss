@@ -1,6 +1,12 @@
 @import '../../../common';
 
 #create-test {
+    &-button {
+        position: fixed;
+        bottom: 75px;
+        right: 12px;        
+    }
+
     &-icon {
         &-save {
             background-image: url("../../../assets/save.png");
