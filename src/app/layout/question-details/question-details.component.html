@@ -1,0 +1,57 @@
+<div id="app-view">
+  <div id="question-detail-container" *ngIf="isQuestionLoaded">
+    <div class="question-detail-section">
+      <div id="question-detail-label">
+        QUESTION
+      </div>
+      <div id="question-detail-title">
+        {{question.questionText}}
+      </div>
+    </div>
+    <div class="question-detail-section">
+      <div id="question-detail-label">
+        METADATA
+      </div>
+      <div id="question-detail-metadata-container">
+        <img id="question-detail-metadata-icon" src="../../../assets/{{question.tags.subject.toLowerCase()}}.png" />
+        <img id="question-detail-metadata-icon" src="../../../assets/notebook.png" *ngIf="!(['math', 'biology', 'history', 'physics', 'english', 'geography', 'chemistry'].indexOf(question.tags.subject.toLowerCase()) >= 0)" />        
+        <div id="question-detail-metadata-content-col">
+          <div>
+            <span id="question-detail-metadata-content-tag">SUBJECT</span>
+            <span id="question-detail-metadata-content-value">{{question.tags.subject}}</span>
+          </div>
+          <div>
+            <span id="question-detail-metadata-content-tag">CHAPTER</span>
+            <span id="question-detail-metadata-content-value">{{question.tags.chapter}}</span>
+          </div>
+          <div>
+            <span id="question-detail-metadata-content-tag">TOPIC</span>
+            <span id="question-detail-metadata-content-value">{{question.tags.topic}}</span>
+          </div>        
+        </div>
+        <div id="question-detail-metadata-content-col">
+          <div>
+            <span id="question-detail-metadata-content-tag">TIME REQUIRED</span>
+            <span id="question-detail-metadata-content-value">{{question.tags.timeRequiredMinutes}}</span>
+          </div>
+          <div>
+            <span id="question-detail-metadata-content-tag">QUESTION TYPE</span>
+            <span id="question-detail-metadata-content-value">{{question.tags.answerType}}</span>
+          </div>
+          <div>
+            <span id="question-detail-metadata-content-tag">BOARD</span>
+            <span id="question-detail-metadata-content-value">{{question.tags.board}}</span>
+          </div>      
+        </div>
+      </div>
+    </div>
+    <div class="question-detail-section">
+      <div id="question-detail-label">
+        ANSWER
+      </div>
+      <div id="question-detail-answer-container">
+        {{question.answer.answerText}}
+      </div>
+    </div>
+  </div>
+</div>

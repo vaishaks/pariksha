@@ -1,0 +1,46 @@
+@import '../../../common';
+
+#question-detail {
+    &-answer {
+        &-container {
+            color: $primary-color;
+            background-color: $foreground-color;
+            font-size: 14px;
+            padding: 10px;
+        }
+    }
+
+    &-label {
+        font-weight: bold;
+    }
+
+    &-metadata {
+        &-content {
+            &-col {
+                width: 50%;
+            }  
+
+            &-tag {
+                font-weight: bold;
+            }                      
+        }
+
+        &-container {
+            background-color: $foreground-color;
+            color: $primary-color;
+            display: flex;
+            padding: 5px;
+        }
+    }
+
+    &-title {
+        padding: 10px;
+        font-size: 17px;
+        background-color: $foreground-color;
+        color: $primary-color;        
+    }
+}
+
+.question-detail-section {
+    margin-bottom: 12px;
+}

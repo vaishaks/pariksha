@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-questioncard',
@@ -8,7 +10,11 @@ import { Component, Input, OnInit } from '@angular/core';
 export class QuestioncardComponent implements OnInit {
   @Input() question: any;
 
-  constructor() { }
+  questionCardClicked = function(questionId) {
+    this.router.navigate(['create/test/search/details'], { queryParams: { id: questionId } });
+  };
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }

@@ -20,6 +20,7 @@ import { CreateSearchComponent } from './create-feature/create-search/create-sea
 import { SearchComponent } from './layout/search/search.component';
 import { LonelyComponent } from './layout/lonely/lonely.component';
 import { QuestioncardComponent } from './layout/questioncard/questioncard.component';
+import { QuestionDetailsComponent } from './layout/question-details/question-details.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { QuestioncardComponent } from './layout/questioncard/questioncard.compon
     CreateSearchComponent,
     SearchComponent,
     LonelyComponent,
-    QuestioncardComponent
+    QuestioncardComponent,
+    QuestionDetailsComponent
   ],
   imports: [
     BrowserModule,

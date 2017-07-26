@@ -7,6 +7,7 @@ import { InputImageComponent } from './input-feature/input-image-component/input
 import { InputTextComponent } from './input-feature/input-text/input-text.component';
 import { CreateSearchComponent } from './create-feature/create-search/create-search.component';
 import { CreateTestComponent } from './create-feature/create-test/create-test.component';
+import { QuestionDetailsComponent } from './layout/question-details/question-details.component';
 import { UnderConstructionComponent } from './layout/under-construction/under-construction.component';
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
     { path: 'create/auto-quiz',  component: InputTextComponent },
     { path: 'create/edit',  component: InputTextComponent },
     { path: 'create/test/search',  component: CreateSearchComponent },
+    { path: 'create/test/search/details',  component: QuestionDetailsComponent },
     { path: 'add-question',  component: InputImageComponent },
     { path: '**', redirectTo: '/underconstruction' }
 ];

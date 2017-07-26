@@ -8,12 +8,17 @@ import 'rxjs/add/operator/map'
 export class SearchService {
   private searchApiUrl = '/searchresponse.json';
   private isSearchResultLoadedSource = new Subject<boolean>();
+  searchResults = [];
 
   isSearchResultLoaded$ = this.isSearchResultLoadedSource.asObservable();
 
   getSearchResults(): Observable<string> {
     return this.http.get(this.searchApiUrl)
-      .map((res: Response) => res.json().Result);
+      .map((res: Response) => {
+        const result = res.json().Result;
+        this.searchResults = result;
+        return result;
+      });
   }
 
   setSearchLoaded(isSearchLoaded: boolean) {

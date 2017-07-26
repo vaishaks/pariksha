@@ -1,4 +1,4 @@
-<div class="question-card">
+<div class="question-card" (click)="questionCardClicked(question.id)">
   <img class="question-card-icon" src="../../../assets/{{question.tags.subject.toLowerCase()}}.png" />
   <img class="question-card-icon" src="../../../assets/notebook.png" *ngIf="!(['math', 'biology', 'history', 'physics', 'english', 'geography', 'chemistry'].indexOf(question.tags.subject.toLowerCase()) >= 0)" />
   <div class="question-card-content">
