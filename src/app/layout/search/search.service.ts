@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map'
 
 @Injectable()
 export class SearchService {
-  private searchApiUrl = '/searchresponse.json';
+  private searchApiUrl = 'http://parikshaservice.azurewebsites.net/api/question/getallquestions';
   private isSearchResultLoadedSource = new Subject<boolean>();
   searchResults = [];
 
