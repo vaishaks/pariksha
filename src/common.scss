@@ -20,13 +20,22 @@ $font-family-light: "Segoe UI Light","HelveticaNeue-Light",sans-serif;
     background: -webkit-linear-gradient(to left, $secondary-color, $primary-color);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, $secondary-color, $primary-color); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+@mixin user-select($val) {
+    -webkit-user-select: $val;
+    -moz-user-select: $val;
+    -ms-user-select: $val;
+    user-select: $val;    
+}
 //Icons
 .icons {
     background-repeat: no-repeat;
     display: block;
 }
 //Reset
-a { color: inherit; }
+a { 
+    color: inherit; 
+    text-decoration: none;
+}
 input, button, submit { 
     border:none;
     box-sizing: border-box;

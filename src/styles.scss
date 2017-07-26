@@ -5,6 +5,7 @@ body {
     @include gradient-background();
     color: $foreground-color;
     font-family: $font-family;
+    font-size: 9px;
 }
 
 #app-view {
@@ -15,25 +16,62 @@ body {
     #top-button {
         font-size: larger;
         position: fixed;
-        right: 15px;
-        top: 15px;
+        right: 10px;
+        top: 13px;
     }
 
-    $fab-size: 64px;
-    .floating-action-button {
-        background: $primary-color;
+
+    .fab {
+        @include user-select(none);
+        display: flex;
+        background-color: $tertiary-color;
+        position: relative;
+        outline: none;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        font-size: 32px;
+        z-index: 3500;
         border-radius: 50%;
-        bottom: 85px;
         box-shadow:0px 0px 3px rgba(0,0,0,0.5),3px 3px 3px rgba(0,0,0,0.25);
-        color: #FFF;
-        cursor: default;
-        display: inline-block;
-        font-size: 2.6667em;
-        height: $fab-size;
-        position: fixed;
-        right: 30px;
-        text-align:center;
-        width: $fab-size;
+        transition: 0.2s opacity ease-in-out;
+        -webkit-transition: 0.2s opacity ease-in-out;
+        border: 0;
+        overflow: hidden; 
+    }
+
+    .fab:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 120px;
+        height: 120px;
+        margin-left: -60px;
+        margin-top: -60px;
+        background: #aaa;
+        border-radius: 100%;
+        opacity: .6;
+        transform: scale(0); 
+    }
+
+    @keyframes ripple {
+        0% {
+            transform: scale(0); 
+        }
+        20% {
+            transform: scale(1); 
+        }
+        100% {
+            opacity: 0;
+            transform: scale(1); 
+        } 
+    }
+
+    .fab:not(:active):after {
+        animation: ripple 3s ease-out; 
     }
 }
 

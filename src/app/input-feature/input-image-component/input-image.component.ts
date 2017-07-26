@@ -1,24 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-import { ImageCapture } from 'image-capture';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+
+import { NavbarService } from '../../layout/navbar/navbar.service';
 
 @Component({
-  selector: 'input-image',
+  selector: 'app-input-image',
   templateUrl: './input-image.component.html',
   styleUrls: ['./input-image.component.scss']
 })
 
-export class InputImageComponent implements OnInit {
+export class InputImageComponent implements OnInit, OnDestroy {
 
   clicked: boolean;
   photo: any;
 
-  constructor() {
+  constructor(private navbarService: NavbarService) {
     this.clicked = false;
 
     this.photo = document.getElementById('photo');
    }
 
   ngOnInit() {
+      this.navbarService.enableBackButton(true);
+      this.navbarService.setPageTitle('Capture');
       // Grab elements, create settings, etc.
       const video1: any = document.getElementById('video');
 
@@ -29,25 +32,31 @@ export class InputImageComponent implements OnInit {
               video1.play();
           });
       }
-  }
+  };
+
+  ngOnDestroy() {
+    this.navbarService.enableBackButton(false);
+  };
 
   capture() {
     this.clicked = true;
 
     const canvas: any = document.getElementById('canvas');
     const context = canvas.getContext('2d');
-    const video = document.getElementById('video');
-    context.drawImage(video, 0, 0, 300, 150);
-    var data = canvas.toDataURL('image/png');
+    const video: any = document.getElementById('video');
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    context.drawImage(video, 0, 0);
+    const data = canvas.toDataURL('image/png');
     document.getElementById('photo').setAttribute('src', data);
-  }
+  };
 
   cancelCapture() {
     this.clicked = false;
-  }
+  };
 
   submitCapture() {
-    var imageSrc = document.getElementById('photo').getAttribute('src');
-  }
+    const imageSrc = document.getElementById('photo').getAttribute('src');
+  };
 
 }

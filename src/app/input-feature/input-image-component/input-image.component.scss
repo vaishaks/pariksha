@@ -1,22 +1,33 @@
 .imageCap {
-    margin: 5%;
-    width: 90%;
+    margin: -8px;
+    width: 100%;
     height: 85%;
     object-fit: cover;
 }
 
 .imageStill {
-    margin: 5%;
-    width: 90%;
-    height: 85%;
+    width: 100%;
 }
 
 #cameraBtns {
     margin: 5%;
-    margin-top: -5%;
     width: 90%;
     height: 10%;
     display: inline-block;
+
+    &-click {
+        margin: 0 50%;
+        position: fixed;
+        left: -25px;
+        bottom: 65px;        
+    }
+
+    &-shutter-icon {
+        background: url("../../../assets/shutter.png");
+        height: 32px;
+        width: 32px;
+        margin: auto;
+    }
 }
 
 .captureBtn {

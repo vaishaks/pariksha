@@ -30,6 +30,10 @@
         outline: none;
     }
 
+    &-box::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+
     &-container {
         background-color: $foreground-color;
         padding: 15px;
@@ -79,7 +83,7 @@
         }
 
         &-expand {
-            height: 250px;
+            height: 200px;
             transition: height 0.15s ease-out;
         }
 
@@ -106,16 +110,16 @@
             margin-right: 3px;
             padding: 5px;
             text-align: center;
-            width: 60px;
+            width: 40px;
 
             &.grade {
-                width: 30px;
+                width: 25px;
             }
         }
 
         &-title {
             color: $tertiary-color;
-            font-size: small;
+            font-size: 9.5px;
             font-weight: bold;
         }
     }

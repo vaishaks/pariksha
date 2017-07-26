@@ -9,7 +9,6 @@
     background-color: $foreground-color;
     border-radius: 10px;
     display: flex;
-    height: 150px;
     margin: 12px auto;
     width: 95%;
     cursor: pointer;
@@ -19,7 +18,7 @@
 
       &-title {
         color: $primary-color;
-        font-size: 28px;
+        font-size: 22px;
         font-weight: 500;
         margin-top: 10px;
         margin-left: 15px;
@@ -27,6 +26,7 @@
 
       &-subtitle {
         color: $inactive-color;
+        font-size: 13px;
         margin: 5px 15px 0 15px;
       }
     }
