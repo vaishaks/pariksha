@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map'
 @Injectable()
 export class InputService {
   autoQuizUri = "https://pariksha-nl.azurewebsites.net/api/ExtractQnA?code=jb13xDhasoAkhRy1GHihIOgKYe/R9OGhyAg3SLxk5dYlqbdxkntWQw==";
-  imageToTextUri = "http://parikshaservice.azurewebsites.net/api/vision/GetTextFromBase64EncodedImage";
+  imageToTextUri = "https://parikshaservice.azurewebsites.net/api/vision/GetTextFromBase64EncodedImage";
 
   getAutoQuiz(inputText: string): Observable<string> {  
     let headers = new Headers();
