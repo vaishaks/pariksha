@@ -1,0 +1,27 @@
+@import '../../../common.scss';
+
+#autoquiz-question {
+    background-color: $foreground-color;
+    margin-bottom: 15px;
+    color: $primary-color;
+    padding: 10px;    
+}
+
+.autoquiz-question {
+    &-card {
+        background: $foreground-color;
+        padding: 10px;
+        color: $secondary-color;
+        font-size: 11px;        
+        margin-bottom: 10px;
+    }
+
+    &-title {
+        margin-bottom: 5px;
+    }
+
+    &-label {
+        font-weight: bolder;  
+        color: $primary-color;      
+    }
+}

@@ -7,6 +7,7 @@ import 'rxjs/add/operator/map'
 export class InputService {
   autoQuizUri = "https://pariksha-nl.azurewebsites.net/api/ExtractQnA?code=jb13xDhasoAkhRy1GHihIOgKYe/R9OGhyAg3SLxk5dYlqbdxkntWQw==";
   imageToTextUri = "https://parikshaservice.azurewebsites.net/api/vision/GetTextFromBase64EncodedImage";
+  autoQuizResults = [];
 
   getAutoQuiz(inputText: string): Observable<string> {  
     let headers = new Headers();
@@ -15,7 +16,11 @@ export class InputService {
     let options = new RequestOptions({ headers: headers });
     
     return this.http.post(this.autoQuizUri, { text: inputText }, options)
-    .map((res: Response) => res.json());
+    .map((res: Response) => {
+      const x = res.json();
+      this.autoQuizResults = x;
+      return x;
+    });
   }
 
   getTextFromImage(inputImg: any): Observable<string> {

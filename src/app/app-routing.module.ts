@@ -6,6 +6,7 @@ import { AddQuestionComponent } from './create-feature/add-question-component/ad
 import { InputImageComponent } from './input-feature/input-image-component/input-image.component';
 import { InputTextComponent } from './input-feature/input-text/input-text.component';
 import { CreateSearchComponent } from './create-feature/create-search/create-search.component';
+import { CreateAutoquizComponent } from './create-feature/create-autoquiz/create-autoquiz.component';
 import { CreateTestComponent } from './create-feature/create-test/create-test.component';
 import { QuestionDetailsComponent } from './layout/question-details/question-details.component';
 import { HomeComponent } from './home-feature/home/home.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
     { path: 'create',  component: CreateComponentComponent },
     { path: 'create/test',  component: CreateTestComponent },
     { path: 'create/auto-quiz',  component: InputTextComponent },
+    { path: 'create/auto-quiz/questions',  component: CreateAutoquizComponent },
     { path: 'create/edit',  component: InputTextComponent },
     { path: 'create/test/search',  component: CreateSearchComponent },
     { path: 'create/test/search/details',  component: QuestionDetailsComponent },

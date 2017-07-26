@@ -22,6 +22,7 @@ import { LonelyComponent } from './layout/lonely/lonely.component';
 import { QuestioncardComponent } from './layout/questioncard/questioncard.component';
 import { QuestionDetailsComponent } from './layout/question-details/question-details.component';
 import { HomeComponent } from './home-feature/home/home.component';
+import { CreateAutoquizComponent } from './create-feature/create-autoquiz/create-autoquiz.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { HomeComponent } from './home-feature/home/home.component';
     LonelyComponent,
     QuestioncardComponent,
     QuestionDetailsComponent,
-    HomeComponent
+    HomeComponent,
+    CreateAutoquizComponent
   ],
   imports: [
     BrowserModule,

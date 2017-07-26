@@ -1,0 +1,30 @@
+<div id="app-view">
+  <div id="autoquiz-question-container">
+    <div id="autoquiz-question">
+      <div class="autoquiz-question-label">PASSAGE</div>
+      {{autoQuizResults.text}}
+    </div>
+  </div>
+  <div id="autoquiz-questions">
+    <div class="autoquiz-question-card" *ngFor="let questionObj of autoQuizResults.qna">
+      <div class="autoquiz-question-label">
+        QUESTION
+      </div>
+      <div class="autoquiz-question-title">
+        <span *ngIf="questionObj.type === 'fillInTheBlanks'"><b>Fill in the Blanks:</b></span>
+        <span *ngIf="questionObj.type === 'trueOrFalse'"><b>True or False:</b></span>
+        {{questionObj.question}}
+        <span *ngIf="questionObj.type === 'subjectiveAnswer'">?</span>
+      </div>
+      <div class="autoquiz-question-label">
+        ANSWER
+      </div>  
+      <div class="autoquiz-question-title">
+        <span *ngIf="questionObj.type !== 'subjectiveAnswer'">{{questionObj.answer}}</span>
+        <span *ngIf="questionObj.type === 'subjectiveAnswer'">
+          <span *ngFor="let answer of questionObj.answer">{{answer}}</span>
+        </span>        
+      </div>    
+    </div>
+  </div>
+</div>
