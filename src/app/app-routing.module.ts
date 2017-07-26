@@ -8,11 +8,13 @@ import { InputTextComponent } from './input-feature/input-text/input-text.compon
 import { CreateSearchComponent } from './create-feature/create-search/create-search.component';
 import { CreateTestComponent } from './create-feature/create-test/create-test.component';
 import { QuestionDetailsComponent } from './layout/question-details/question-details.component';
+import { HomeComponent } from './home-feature/home/home.component';
 import { UnderConstructionComponent } from './layout/under-construction/under-construction.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/underconstruction', pathMatch: 'full' },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'underconstruction',  component: UnderConstructionComponent },
+    { path: 'home',  component: HomeComponent },
     { path: 'create',  component: CreateComponentComponent },
     { path: 'create/test',  component: CreateTestComponent },
     { path: 'create/auto-quiz',  component: InputTextComponent },
