@@ -1,4 +1,6 @@
 <div id="app-view">
   <app-search></app-search>
-  <app-lonely></app-lonely>
+  <div *ngIf="!isSearchLoaded">
+    <app-lonely></app-lonely>
+  </div>  
 </div>

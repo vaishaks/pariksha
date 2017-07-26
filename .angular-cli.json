@@ -12,6 +12,7 @@
         "assets",
         "favicon.ico",
         "manifest.json",
+        "searchresponse.json",
         "pariksha-icon.png"
       ],
       "index": "index.html",

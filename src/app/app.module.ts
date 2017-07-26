@@ -19,6 +19,7 @@ import { CreateTestComponent } from './create-feature/create-test/create-test.co
 import { CreateSearchComponent } from './create-feature/create-search/create-search.component';
 import { SearchComponent } from './layout/search/search.component';
 import { LonelyComponent } from './layout/lonely/lonely.component';
+import { QuestioncardComponent } from './layout/questioncard/questioncard.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { LonelyComponent } from './layout/lonely/lonely.component';
     CreateTestComponent,
     CreateSearchComponent,
     SearchComponent,
-    LonelyComponent
+    LonelyComponent,
+    QuestioncardComponent
   ],
   imports: [
     BrowserModule,

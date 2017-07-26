@@ -1,0 +1,46 @@
+@import '../../../common';
+
+.question-card {
+    background: $foreground-color;
+    display: flex;
+    height: 80px;
+    margin-top: 10px;
+    padding: 6px 0;
+    position: relative;
+    
+    &-icon {
+        position: absolute;
+        top: 6px;        
+    }
+
+    &-content {
+        color: $tertiary-color;
+        margin-left: 70px;               
+        width: 100%;
+        height: 100%;
+
+        &-metadata {
+            color: $secondary-color;
+            display: flex;
+            height: calc(100% - 13px);
+            margin-top: 5px;
+
+            &-col {
+                height: 100%;
+                width: 50%;               
+            }
+
+            &-tag {
+                font-weight: bold;
+            }
+        }
+
+        &-title {
+            font-size: 11px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: calc(100vw - 90px);             
+        }
+    }
+}
